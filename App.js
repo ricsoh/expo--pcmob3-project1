@@ -14,19 +14,7 @@ const namesAsObjects = names.map((item, index) => {
 
 export default function App() {
   const renderName = ({ item }) => (
-    <View
-      style={{
-        padding: 20,
-        margin: 8,
-        backgroundColor: "lightblue",
-        borderBottomColor: "#999",
-        borderBottomWidth: 1,
-        shadowColor: "black",
-        shadowRadius: 5,
-        shadowOpacity: 0.2,
-        shadowOffset: { x: 0, height: 3 },
-      }}
-    >
+    <View style={styles.viewStyle}>
       <Text style={{textAlign: "center"}}>{item.name}</Text>
     </View>
   ); 
@@ -44,5 +32,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  viewStyle: {
+    padding: 20,
+    margin: 8,
+    backgroundColor: "lightblue",
+    borderBottomColor: "#999",
+    borderBottomWidth: 1,
+    shadowColor: "black",
+    shadowRadius: 5,
+    shadowOpacity: 0.2,
+    shadowOffset: { x: 0, height: 3 },
   },
 });
