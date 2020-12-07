@@ -19,7 +19,8 @@ export default function App() {
   return (
     <FlatList
       data={namesAsObjects}
-      renderItem={renderName}
+      renderItem={renderName} 
+      keyExtractor={(item) => item.name}
     />
   );
  }
